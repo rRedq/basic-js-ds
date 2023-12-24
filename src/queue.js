@@ -39,7 +39,8 @@ enqueue(value) {
 dequeue() {
   const deletedElement = this.queueFirst;
   this.queueFirst = this.queueFirst.next;
-  return deletedElement;
+
+  return deletedElement.value;
 }
 }
 
